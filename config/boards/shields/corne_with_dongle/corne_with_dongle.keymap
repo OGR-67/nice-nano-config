@@ -147,7 +147,7 @@
         semi-colon {
             bindings = <&kp SEMI>;
             key-positions = <19 20 21>;
-            timeout-ms = <40>;
+            require-prior-idle-ms = <50>;
         };
 
         comma {
