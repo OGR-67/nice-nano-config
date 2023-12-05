@@ -147,6 +147,7 @@
         semi-colon {
             bindings = <&kp SEMI>;
             key-positions = <19 20 21>;
+            timeout-ms = <40>;
         };
 
         comma {
@@ -172,16 +173,19 @@
         less-than {
             bindings = <&kp LESS_THAN>;
             key-positions = <20 30 40>;
+            timeout-ms = <40>;
         };
 
         greater-than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <40 19 32>;
+            timeout-ms = <40>;
         };
 
         carret {
             bindings = <&kp CARET>;
             key-positions = <19 8 21>;
+            timeout-ms = <40>;
         };
 
         tilde {
@@ -192,6 +196,7 @@
         grave-accent {
             bindings = <&kp GRAVE>;
             key-positions = <20 7>;
+            timeout-ms = <40>;
         };
 
         percent {
@@ -202,16 +207,19 @@
         exclamation {
             bindings = <&kp EXCL>;
             key-positions = <7 8 21>;
+            timeout-ms = <40>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <19 20 9>;
+            timeout-ms = <40>;
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <31 32 21>;
+            timeout-ms = <40>;
         };
 
         at {
@@ -252,6 +260,7 @@
         plus {
             bindings = <&kp LS(EQUAL)>;
             key-positions = <18 20 19>;
+            timeout-ms = <40>;
         };
 
         open-parenthesis {
@@ -267,21 +276,25 @@
         open-bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <40 7>;
+            timeout-ms = <40>;
         };
 
         close-bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <40 8>;
+            timeout-ms = <40>;
         };
 
         open-curly-brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <40 31>;
+            timeout-ms = <40>;
         };
 
         close-curly-brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <40 32>;
+            timeout-ms = <40>;
         };
     };
 
