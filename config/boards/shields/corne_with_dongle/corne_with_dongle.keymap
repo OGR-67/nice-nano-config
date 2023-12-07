@@ -158,6 +158,16 @@
             bindings = <&kp DOLLAR>;
             key-positions = <4 14>;
         };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <20 31>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <20 33>;
+        };
     };
 
     keymap {
