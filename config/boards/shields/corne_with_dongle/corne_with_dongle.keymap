@@ -194,10 +194,10 @@
 
         raise_layer {
             bindings = <
-&trans  &trans  &kp LC(RIGHT)  &trans     &trans          &trans          &trans          &trans          &trans        &trans           &trans     &trans
-&none   &none   &none          &trans     &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none      &none
-&none   &none   &none          &none      &kt LEFT_SHIFT  &kp LC(LEFT)    &none           &none           &none         &none            &kp LC(F)  &none
-                               &mo BKS_L  &trans          &mo 5           &trans          &trans          &trans
+&trans  &trans  &kp LC(RIGHT)  &trans     &trans          &trans          &kp LC(C)       &trans          &trans        &trans           &kp LC(V)  &trans
+&none   &none   &none          &kp LC(X)  &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none      &none
+&none   &none   &kp DELETE     &none      &kt LEFT_SHIFT  &kp LC(LEFT)    &none           &none           &none         &none            &kp LC(F)  &none
+                               &mo BKS_L  &trans          &mo 2           &mo 5           &trans          &trans
             >;
         };
 
