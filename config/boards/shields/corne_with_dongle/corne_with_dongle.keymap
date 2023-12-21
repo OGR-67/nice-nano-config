@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
 #define LOW_L   1
@@ -175,10 +176,10 @@
 
         default_layer {
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y            &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
-&mt LEFT_ALT TAB  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H            &kp J  &kp K      &kp L    &kp SEMICOLON  &mt RIGHT_ALT SQT
-&kp LS(TAB)       &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH      &kp DELETE
-                                &kp LGUI  &kp LCTRL  &lt 2 SPACE    &kp RIGHT_SHIFT  &mo 1  &kp ENTER
+&kp ESC             &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y            &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
+&mt LEFT_ALT TAB    &kp A  &kp S  &kp D     &kp F      &kp G          &kp H            &kp J  &kp K      &kp L    &kp SEMICOLON  &mt RIGHT_ALT SQT
+&mt LSHIFT LS(TAB)  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH      &kp DELETE
+                                  &kp LGUI  &kp LCTRL  &lt 2 SPACE    &kp RIGHT_SHIFT  &mo 1  &kp ENTER
             >;
         };
 
@@ -193,10 +194,10 @@
 
         raise_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4       &kp F5      &kp F6       &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&none   &none   &none   &kp K_PASTE  &kp K_COPY  &kp K_CUT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none    &none
-&none   &none   &none   &none        &none       &none        &none           &none           &none         &none            &none    &none
-                        &mo BKS_L    &trans      &trans       &trans          &trans          &trans
+&trans  &trans  &kp LC(RIGHT)  &trans     &trans          &trans          &trans          &trans          &trans        &trans           &trans     &trans
+&none   &none   &none          &trans     &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none      &none
+&none   &none   &none          &none      &kt LEFT_SHIFT  &kp LC(LEFT)    &none           &none           &none         &none            &kp LC(F)  &none
+                               &mo BKS_L  &trans          &mo 5           &trans          &trans          &trans
             >;
         };
 
@@ -220,9 +221,9 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
